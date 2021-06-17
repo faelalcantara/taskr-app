@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gray-100: #FAF9FA;
+  --gray-200: #F1F0F4;
+
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%; // 15px
+  }
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 87.5%; // 14px
+  }
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: var(--gray-200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+}
+
+body, input, textarea, button {
+  font: 500 1rem Inter sans-serif;
+  color: var(--blue-200);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  font-family: Lexend, sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p, span, button{
+  font-family: Inter, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.main {
+  min-width: 60rem;
+  max-width: 60rem;
+  height: 75vh;
+  background: white;
+  // border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.mainContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  .navContainer {
+    width: 12rem;
+    height: 100%;
+    background: #7E57C2;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font: 500 1rem Inter sans-serif;
+
+    ul {
+      .active {
+        color: yellow;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: yellow;
+      }
+
+      li {
+        height: 2rem;
+        margin-bottom: 8px;
+        // background: yellow;
+        list-style: none;
+        font-family: "Lexend", sans-serif;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        transition: 0.5s ease;
+  
+        span {
+          margin-right: 5px;
+        }
+
+        &:hover {
+          color: yellow;
+        }
+      }
+
+      .buttonActive {
+        color: yellow;
+      }
+    }
+
+    button {
+      width: 100%;
+      height: 2rem;
+      background: #7E57C2; //#3D0B68
+      color: white;
+      font-family: "Lexend", sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-top: 10px;
+      align-self: center;
+
+      border: none;
+      border-radius: 1rem;
+    }
+  }
+
+  .contentContainer {
+    width: 100%;
+    height: 100%;
+
+    .statusBar {
+      width: 100%;
+      height: 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 35px;
+      padding-right: 35px;
+      border-bottom: solid 1px var(--gray-200);
+      background: var(--gray-100);
+      
+      h2 {
+        font-family: "Lexend", sans-serif;
+        font-size: 0.9rem;
+        font-weight: 600;
+
+        span {
+          color: #7E57C2;
+          font-family: "Inter", sans-serif;
+          font-size: 0.9rem;
+        }
+      }
+
+      button {
+        background: none;
+        border: none;
+        font-family: "Lexend", sans-serif;
+        font-size: 0.8rem;
+        font-weight: 600;
+        // color: white;
+        display: flex;
+        justify-content: center;
+
+        span {
+          margin-left: 6px;
+        }
+
+        &:hover {
+          color: #7E57C2;
+        }
+      }
+
+    }
+
+    .mainContent {
+      width: 100%;
+      height: 100%;
+      overflow-y: scroll;
+      // background: yellow;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.taskRow {
+  // background: yellow;
+  font-family: "Lexend", sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 35px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--gray-200);
+
+  .taskLine {
+    &:hover {
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+
+  .buttonsContainer {
+    display: flex;
+    align-items: center;
+    
+    button {
+      background: none;
+      border: none;
+      font-size: 0;
+
+      &:hover {
+        color: #7E57C2;
+      }
+    }
+  }
+}

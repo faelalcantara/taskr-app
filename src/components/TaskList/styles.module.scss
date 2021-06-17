@@ -1,0 +1,32 @@
+.mainContainer {
+  width: 100%;
+  height: 100%;
+  // background: yellow;
+  padding-left: 35px;
+  padding-top: 15px;
+
+  h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    margin-right: 35px;
+    padding-bottom: 5px;
+    // font-weight: 500;
+    border-bottom: 1px solid var(--gray-200);
+  }
+
+  .tasksList {
+    width: 100%;
+    height: 2rem;
+    background: yellow;
+  }
+
+  .empty {
+    font-family: "Inter", sans-serif;
+    font-size: 0.9rem;
+    margin-right: 35px;
+    padding: 10px 0px;
+    font-weight: 400;
+    color: #c3c3c3;
+  }
+
+}
